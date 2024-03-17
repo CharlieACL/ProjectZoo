@@ -1,0 +1,29 @@
+body{
+    background-image: url('https://images4.alphacoders.com/871/thumb-1920-871898.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.buttonSty{
+    background-color: #33493c;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.buttonSty:hover{
+    background-color:#efb810;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.ancla{
+    color:#33493c;
+    font-size: 15px;
+}
+
+.ancla:hover{
+    color:#628f75;
+}

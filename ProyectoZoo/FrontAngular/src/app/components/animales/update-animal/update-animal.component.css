@@ -1,0 +1,21 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/fe/02/4e/fe024e50a71cfd6599841dbb2a144d2c.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.buttonSty{
+    background-color: #33493c;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttonSty:hover{
+    background-color:#efb810;
+    color: #ffffff;
+    font-size: 18px;
+}

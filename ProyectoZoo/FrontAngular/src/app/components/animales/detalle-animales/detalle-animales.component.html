@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="bg-light p-4 rounded" style="margin-top: 20%;">
+                    <div style="font-size: 20px;">
+                        <ul class="list-group">
+                            <li class="list-group-item" 
+                                style="background-color: #33493c;color: #ffffff;text-align: center; font-size: 28px;font:bold">
+                                Datos de {{animal().nombre}}
+                            </li>
+                            <li class="list-group-item">Especie: <span class="fw-bold">{{ animal().especie }}</span></li>
+                            <li class="list-group-item">Sexo: <span class="fw-bold">{{ animal().sexo }}</span></li>
+                            <li class="list-group-item">Edad: <span class="fw-bold">{{ animal().edad }}</span></li>
+                            <li class="list-group-item">Peso: <span class="fw-bold">{{ animal().peso }}</span></li>
+                            <li class="list-group-item">Altura: <span class="fw-bold">{{ animal().altura }}</span></li>
+                            <li class="list-group-item">ID Zona: <span class="fw-bold">
+                                <ng-container *ngIf="animal().idZona === 1">Zona Este</ng-container>
+                                <ng-container *ngIf="animal().idZona === 2">Zona Norte</ng-container>
+                                <ng-container *ngIf="animal().idZona === 3">Zona Oeste</ng-container>
+                                <ng-container *ngIf="animal().idZona === 4">Zona Sur</ng-container>
+                            </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

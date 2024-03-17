@@ -1,0 +1,33 @@
+<body>
+    <div class="container ">
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card" style="background-color: rgba(255, 255, 255, 0.7);margin-top: 30%;">
+            <div class="card-header text-center">
+                <h4 class="mb-0">Inicio de sesión</h4>
+            </div>
+            <div class="card-body bg-transparent" style="font-size: 20px;"> 
+                <form [formGroup]="formulario" (ngSubmit)="onSubmit()" > 
+                <div class="m-3">
+                    <label for="correo" class="form-label" style="font-weight: bold;">Correo electrónico</label>
+                    <input type="email" id="correo" class="form-control" formControlName="correo" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="m-3">
+                    <label for="contrasenna" class="form-label" style="font-weight: bold;">Contraseña</label>
+                    <input type="password" id="contrasenna" class="form-control" formControlName="contrasenna" placeholder="Ingrese su contraseña">
+                </div >
+                <div class="text-center " >
+                    <button type="submit" class="btn buttonSty">Iniciar sesión</button>
+                </div>
+                <div style="text-align: center;margin-top: 5px;">
+                    <a class="ancla" [routerLink]="['/register']">No tienes usuario? Ingresa aquí</a>
+                </div>                
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+

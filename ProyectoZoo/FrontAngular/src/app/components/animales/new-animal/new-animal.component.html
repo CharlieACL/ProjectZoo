@@ -1,0 +1,60 @@
+<body>
+    
+
+    <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded m-4">
+                        <h1 class="m-1" style="text-align: center;">Registro</h1>
+                        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                            <div style="display: flex;">
+                                <div class="m-5">
+                                    <div class="mb-3">
+                                        <label for="especie" class="form-label">Especie</label>
+                                        <input type="text" class="form-control" id="especie" formControlName="especie" required>
+                                    </div>       
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" formControlName="nombre" required>
+                                    </div>        
+                                    <div class="mb-3">
+                                        <label for="sexo" class="form-label">Sexo</label>
+                                        <select class="form-select" id="sexo" formControlName="sexo" required>
+                                            <option value="Macho">Macho</option>
+                                            <option value="Hembra">Hembra</option>
+                                        </select>
+                                    </div>        
+                                    <div class="mb-3">
+                                        <label for="peso" class="form-label">Peso</label>
+                                        <input type="text" class="form-control" id="peso" formControlName="peso" required>
+                                    </div>      
+                                </div>
+
+                                <div class="m-5">
+                                    <div class="mb-3">
+                                        <label for="altura" class="form-label">Altura</label>
+                                        <input type="text" class="form-control" id="altura" formControlName="altura" required>
+                                    </div>       
+                                    <div class="mb-3">
+                                        <label for="idZona" class="form-label">Zona</label>
+                                        <select class="form-select" id="idZona" formControlName="idZona" required>
+                                            <option value=1>Zona Este</option>
+                                            <option value=2>Zona Norte</option>
+                                            <option value=3>Zona Oeste</option>
+                                            <option value=4>Zona Sur</option>
+                                        </select>
+                                    </div>      
+                                    <div class="mb-3">
+                                        <label for="edad" class="form-label">Edad</label>
+                                        <input type="number" class="form-control" id="edad" formControlName="edad" required>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <button type="submit" class="btn buttonSty w-100">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>

@@ -1,0 +1,19 @@
+### Register
+POST http://localhost:3000/api/usuarios/register
+Content-Type: application/json
+
+{
+    "nombre":"jorge",
+    "correo":"joreg@gmail.com",
+    "contrasenna":"456",
+    "idRol": 2
+}
+
+### Login
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+    "correo": "joreg@gmail.com",
+    "contrasenna":"456"
+}

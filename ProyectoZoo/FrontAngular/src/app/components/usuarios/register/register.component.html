@@ -1,0 +1,39 @@
+<body>
+    <div class="container ">
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card" style="background-color: rgba(255, 255, 255, 0.7);margin-top: 30%;">
+            <div class="card-header text-center">
+                <h4 class="mb-0">Registro de Usuarios</h4>
+            </div>
+            <div class="card-body bg-transparent" style="font-size: 18px;"> 
+                <form [formGroup]="formulario" (ngSubmit)="onSubmit()" > 
+                    <div class="m-3">
+                        <label for="nombre" class="form-label" style="font-weight: bold;">Nombre</label>
+                        <input type="text" class="form-control" formControlName="nombre" placeholder="Ingrese su numbre completo">
+                    </div>
+                    <div class="m-3">
+                        <label for="correo" class="form-label" style="font-weight: bold;">Correo</label>
+                        <input type="email" class="form-control" formControlName="correo" placeholder="Ingrese su correo eléctronico">
+                    </div>
+                    <div class="m-3">
+                        <label for="contrasenna" class="form-label" style="font-weight: bold;">Contraseña</label>
+                        <input type="password" class="form-control" formControlName="contrasenna" placeholder="Ingrese su contraseña">
+                    </div>
+                    
+                    <input type="number" class="form-control" formControlName="idRol" style="display: none;">
+                    
+                    <div class="text-center " >
+                        <button type="submit" class="btn buttonSty">Registrar</button>
+                    </div>
+
+                    <div style="text-align: center;margin-top: 5px;">
+                        <a class="ancla" [routerLink]="['/login']">Ya tienes usuario? Ingresa aquí</a>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
