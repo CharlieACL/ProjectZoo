@@ -13,6 +13,8 @@ import { HomeComponent } from './components/ui/home/home.component';
 import { UpdateAnimalComponent } from './components/animales/update-animal/update-animal.component';
 import { RegisterComponent } from './components/usuarios/register/register.component';
 import { LoginComponent } from './components/usuarios/login/login.component';
+import { ListEventosComponent } from './components/eventos/list-eventos/list-eventos.component';
+import { NewContactoComponent } from './components/contactenos/new-contacto/new-contacto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LoginComponent } from './components/usuarios/login/login.component';
     HomeComponent,
     UpdateAnimalComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ListEventosComponent,
+    NewContactoComponent
   ],
   imports: [
     BrowserModule,

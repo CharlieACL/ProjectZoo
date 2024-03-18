@@ -8,6 +8,8 @@ import { UpdateAnimalComponent } from './components/animales/update-animal/updat
 import { RegisterComponent } from './components/usuarios/register/register.component';
 import { LoginComponent } from './components/usuarios/login/login.component';
 import { adminGuard } from './guards/admin.guard';
+import { ListEventosComponent } from './components/eventos/list-eventos/list-eventos.component';
+import { NewContactoComponent } from './components/contactenos/new-contacto/new-contacto.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -18,7 +20,10 @@ const routes: Routes = [
   {path: 'animales/:animalId',component:DetalleAnimalesComponent,canActivate:[adminGuard]},
   
   {path: 'register',component:RegisterComponent},
-  {path: 'login',component:LoginComponent}
+  {path: 'login',component:LoginComponent},
+
+  {path:'eventos',component:ListEventosComponent},
+  {path:'contacto',component:NewContactoComponent}
 ];
 
 @NgModule({

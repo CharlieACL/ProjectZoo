@@ -1,0 +1,20 @@
+body{
+    background-image: url('https://th.bing.com/th/id/R.479535da09dedd52183be7964435a119?rik=QM9J55LZApq3fQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.buttonSty{
+    background-color: #33493c;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.buttonSty:hover{
+    background-color:#efb810;
+    color: #ffffff;
+    font-size: 20px;
+}
