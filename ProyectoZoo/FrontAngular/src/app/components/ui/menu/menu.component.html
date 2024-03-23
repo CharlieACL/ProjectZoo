@@ -20,7 +20,7 @@
             <li class="nav-item dropdown">
                 <a *ngIf="usuariosService.isAdmin()" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Administración</a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/usuarios']">Usuarios</a></li>
                 <li><a class="dropdown-item" [routerLink]="['/animales']">Animales</a></li>
                 <li><a class="dropdown-item" href="#">Empleados</a></li>
                 <li><a class="dropdown-item" href="#">Eventos</a></li>

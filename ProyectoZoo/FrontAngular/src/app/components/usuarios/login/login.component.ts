@@ -13,6 +13,7 @@ export class LoginComponent {
   formulario: FormGroup;
   usuariosService = inject(UsuariosService);
   router = inject(Router);
+  errorMessage: string = '';
 
   constructor(){
     this.formulario = new FormGroup({
@@ -24,6 +25,7 @@ export class LoginComponent {
   async onSubmit(){
     const respuesta = await this.usuariosService.login(this.formulario.value);    
     if(respuesta){
+      console.log(respuesta);
       if(respuesta.idRol == 1){
         localStorage.setItem('token_admin',respuesta.token);
         this.router.navigate(['']);
@@ -33,8 +35,9 @@ export class LoginComponent {
         this.router.navigate(['']);
       }     
     }
-    else{
-      console.log('error');
+    if(respuesta.error){
+      this.errorMessage = 'Datos invalidos, intentelo nuevamente';
+      console.error('Error: hay iniciar sesion.'); 
     }
   }
 }

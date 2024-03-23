@@ -19,6 +19,10 @@
     color: #efb810; 
 }
 
+.nav-link:focus{
+    color: #efb810; 
+}
+
 .nav-link.dropdown-toggle.show {
     color: #efb810; 
 }

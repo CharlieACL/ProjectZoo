@@ -15,6 +15,9 @@ import { RegisterComponent } from './components/usuarios/register/register.compo
 import { LoginComponent } from './components/usuarios/login/login.component';
 import { ListEventosComponent } from './components/eventos/list-eventos/list-eventos.component';
 import { NewContactoComponent } from './components/contactenos/new-contacto/new-contacto.component';
+import { ListaUsuariosComponent } from './components/usuarios/lista-usuarios/lista-usuarios.component';
+import { NewUsuarioComponent } from './components/usuarios/new-usuario/new-usuario.component';
+import { UpdateUsuarioComponent } from './components/usuarios/update-usuario/update-usuario.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { NewContactoComponent } from './components/contactenos/new-contacto/new-
     RegisterComponent,
     LoginComponent,
     ListEventosComponent,
-    NewContactoComponent
+    NewContactoComponent,
+    ListaUsuariosComponent,
+    NewUsuarioComponent,
+    UpdateUsuarioComponent
   ],
   imports: [
     BrowserModule,

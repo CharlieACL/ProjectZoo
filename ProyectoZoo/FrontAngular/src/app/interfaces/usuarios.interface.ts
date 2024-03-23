@@ -1,9 +1,10 @@
 export interface UsuariosCollection{
     _id:string;
-    nombre: String,
-    correo: String,
-    contrasenna: String,
-    idRol: Number,
+    nombre: string;
+    correo: string;
+    contrasenna: string;
+    idRol: number;
     __v: number;
     token: string;
+    error: string;
 }

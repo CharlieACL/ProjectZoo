@@ -1,0 +1,33 @@
+### Muestra todos los documentos de la colección Empleados
+GET http://localhost:3000/api/empleados
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+### Muestra el documento de una colección de Empleados mediante su _idObject
+GET http://localhost:3000/api/empleados/65ff372998526345f927cdc3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+### Agrego un nuevo Empleado
+POST http://localhost:3000/api/empleados
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+{
+    "nombre": "x",
+    "apellido": "x",
+    "identificacion": 118334456,
+    "telefono": "8337-7454",
+    "idServicio": 3
+}
+
+### Actualizo un Empleado
+PUT http://localhost:3000/api/empleados/65ff372998526345f927cdc3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+{
+    "idServicio": 5
+}
+
+### Elimino un Empleado
+DELETE http://localhost:3000/api/empleados/65ff3b82520b0038e00e3e79
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE

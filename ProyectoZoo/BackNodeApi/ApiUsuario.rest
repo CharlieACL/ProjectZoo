@@ -14,6 +14,39 @@ POST http://localhost:3000/api/usuarios/login
 Content-Type: application/json
 
 {
-    "correo": "joreg@gmail.com",
-    "contrasenna":"456"
+    "correo": "admin00@email.com",
+    "contrasenna":"123"
 }
+
+### ListaUsuarios
+GET http://localhost:3000/api/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+### DetalleUsuario
+GET http://localhost:3000/api/users/65ff21c74acb732a46d02430
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+### AgregarUsuario
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+{
+    "nombre":"userApi",
+    "correo":"userApi@gmail.com",
+    "contrasenna":"123",
+    "idRol": 1
+}
+
+### ModificarUsuario
+PUT http://localhost:3000/api/users/65fb9d10f195fe67f51576e6
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+Content-Type: application/json
+
+{
+    "idRol": 2
+}
+
+### EliminarUsuario
+DELETE http://localhost:3000/api/users/65f5e14f2136e8dfeab7ed2b
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws

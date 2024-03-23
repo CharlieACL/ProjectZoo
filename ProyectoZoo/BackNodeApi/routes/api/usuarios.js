@@ -48,7 +48,6 @@ function createToken(usuario){
         user_role: usuario.idRol
     }
     return jwt.sign(payload,'tokenPass')
-}
-
+};
 
 module.exports = router;

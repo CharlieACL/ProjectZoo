@@ -4,10 +4,13 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJl
 
 ### Muestra el documento de una colección de Animales mediante su _idObject
 GET http://localhost:3000/api/animales/65f1ea731a085c4c38495376
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE
 
 ### Agrego un nuevo animal
 POST http://localhost:3000/api/animales
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE
+
 {
     "especie": "Venado",
     "nombre": "Otis",
@@ -22,9 +25,12 @@ Content-Type: application/json
 ### Actualizo un animal
 PUT http://localhost:3000/api/animales/65f1ea731a085c4c38495376
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE
 
 {
     "activo": true
 }
+
 ### Elimino un animal
 DELETE http://localhost:3000/api/animales/65f498179b171ba1286abcd1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE

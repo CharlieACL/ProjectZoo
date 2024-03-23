@@ -21,8 +21,11 @@
                 </div>
                 <div style="text-align: center;margin-top: 5px;">
                     <a class="ancla" [routerLink]="['/register']">No tienes usuario? Ingresa aquí</a>
-                </div>                
+                </div>     
                 </form>
+                <div *ngIf="errorMessage" class="text-center mt-3 text-danger">
+                    {{ errorMessage }}
+                </div>
             </div>
             </div>
         </div>
