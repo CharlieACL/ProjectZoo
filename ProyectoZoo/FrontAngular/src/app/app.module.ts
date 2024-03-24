@@ -18,6 +18,10 @@ import { NewContactoComponent } from './components/contactenos/new-contacto/new-
 import { ListaUsuariosComponent } from './components/usuarios/lista-usuarios/lista-usuarios.component';
 import { NewUsuarioComponent } from './components/usuarios/new-usuario/new-usuario.component';
 import { UpdateUsuarioComponent } from './components/usuarios/update-usuario/update-usuario.component';
+import { NewEmpleadoComponent } from './components/empleados/new-empleado/new-empleado.component';
+import { DetalleEmpleadoComponent } from './components/empleados/detalle-empleado/detalle-empleado.component';
+import { ListaEmpleadoComponent } from './components/empleados/lista-empleado/lista-empleado.component';
+import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/update-empleado.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { UpdateUsuarioComponent } from './components/usuarios/update-usuario/upd
     NewContactoComponent,
     ListaUsuariosComponent,
     NewUsuarioComponent,
-    UpdateUsuarioComponent
+    UpdateUsuarioComponent,
+    NewEmpleadoComponent,
+    DetalleEmpleadoComponent,
+    ListaEmpleadoComponent,
+    UpdateEmpleadoComponent
   ],
   imports: [
     BrowserModule,

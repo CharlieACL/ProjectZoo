@@ -3,7 +3,7 @@ GET http://localhost:3000/api/empleados
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
 
 ### Muestra el documento de una colección de Empleados mediante su _idObject
-GET http://localhost:3000/api/empleados/65ff372998526345f927cdc3
+GET http://localhost:3000/api/empleados/65ff3afa520b0038e00e3e76
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
 
 ### Agrego un nuevo Empleado
@@ -29,5 +29,5 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWlu
 }
 
 ### Elimino un Empleado
-DELETE http://localhost:3000/api/empleados/65ff3b82520b0038e00e3e79
+DELETE http://localhost:3000/api/empleados/6600a69b88fba9005e08e7d1
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFuZHJlc0BnbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjEsImlhdCI6MTcxMDYyNDQyNX0.pStHniLDKbhwIpCAJ_GHVy7S9oZe7eL7L_cvJ1kxpZE

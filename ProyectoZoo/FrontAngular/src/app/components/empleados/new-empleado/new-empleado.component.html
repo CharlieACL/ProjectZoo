@@ -1,0 +1,41 @@
+<body>
+    <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded m-4">
+                        <h1 class="m-1" style="text-align: center;">Registro</h1>
+                        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                            <div class="mb-3">
+                                <label for="identificacion" class="form-label">identificacion</label>
+                                <input type="text" class="form-control" id="identificacion" formControlName="identificacion" required>
+                            </div> 
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre de Empleado</label>
+                                <input type="text" class="form-control" id="nombre" formControlName="nombre" required>
+                            </div>       
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido de Empleado</label>
+                                <input type="text" class="form-control" id="apellido" formControlName="apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Numero de Teléfono</label>
+                                <input type="number" class="form-control" id="telefono" formControlName="telefono" required>
+                            </div>        
+                            <div class="mb-3">
+                                <label for="idServicio" class="form-label">Tipo de Servicio</label>
+                                <select class="form-select" id="idServicio" formControlName="idServicio" required>
+                                    <option value=1>Guia</option>
+                                    <option value=2>Cuidador</option>
+                                    <option value=3>Mantenimiento</option>
+                                    <option value=4>Seguridad</option>
+                                    <option value=5>Veterinaria</option>
+                                    <option value=6>Educador</option>
+                                </select>
+                            </div>          
+                            <button type="submit" class="btn buttonSty w-100">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>

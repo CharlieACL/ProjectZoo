@@ -1,0 +1,30 @@
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="bg-light p-4 rounded" style="margin-top: 20%;">
+                    <div style="font-size: 20px;">
+                        <ul class="list-group">
+                            <li class="list-group-item" 
+                                style="background-color: #33493c;color: #ffffff;text-align: center; font-size: 28px;font:bold">
+                                Datos de {{empleado().nombre}}
+                            </li>
+                            <li class="list-group-item">Identificación: <span class="fw-bold">{{ empleado().identificacion }}</span></li>
+                            <li class="list-group-item">Nombre: <span class="fw-bold">{{ empleado().nombre }}</span></li>
+                            <li class="list-group-item">Apellido: <span class="fw-bold">{{ empleado().apellido }}</span></li>
+                            <li class="list-group-item">Telefono: <span class="fw-bold">{{ empleado().telefono }}</span></li>
+                            <li class="list-group-item">Tipo de Servicio: <span class="fw-bold">
+                                <ng-container *ngIf="empleado().idServicio === 1">Guia</ng-container>
+                                <ng-container *ngIf="empleado().idServicio === 2">Cuidador</ng-container>
+                                <ng-container *ngIf="empleado().idServicio === 3">Mantenimiento</ng-container>
+                                <ng-container *ngIf="empleado().idServicio === 4">Seguridad</ng-container>
+                                <ng-container *ngIf="empleado().idServicio === 5">Veterinaria</ng-container>
+                                <ng-container *ngIf="empleado().idServicio === 6">Educador</ng-container>
+                            </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

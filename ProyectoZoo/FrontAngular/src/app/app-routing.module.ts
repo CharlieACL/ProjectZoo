@@ -13,6 +13,10 @@ import { NewContactoComponent } from './components/contactenos/new-contacto/new-
 import { ListaUsuariosComponent } from './components/usuarios/lista-usuarios/lista-usuarios.component';
 import { NewUsuarioComponent } from './components/usuarios/new-usuario/new-usuario.component';
 import { UpdateUsuarioComponent } from './components/usuarios/update-usuario/update-usuario.component';
+import { ListaEmpleadoComponent } from './components/empleados/lista-empleado/lista-empleado.component';
+import { NewEmpleadoComponent } from './components/empleados/new-empleado/new-empleado.component';
+import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/update-empleado.component';
+import { DetalleEmpleadoComponent } from './components/empleados/detalle-empleado/detalle-empleado.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -28,6 +32,11 @@ const routes: Routes = [
   {path: 'usuarios',component:ListaUsuariosComponent,canActivate:[adminGuard]},
   {path: 'usuarios/new',component:NewUsuarioComponent,canActivate:[adminGuard]},
   {path: 'usuarios/update/:usuarioId',component:UpdateUsuarioComponent,canActivate:[adminGuard]},
+
+  {path: 'empleados',component:ListaEmpleadoComponent,canActivate:[adminGuard]},
+  {path: 'empleados/new',component:NewEmpleadoComponent,canActivate:[adminGuard]},
+  {path:'empleados/update/:empleadoId',component:UpdateEmpleadoComponent,canActivate:[adminGuard]},
+  {path: 'empleados/:empleadoId',component:DetalleEmpleadoComponent,canActivate:[adminGuard]},
 
   {path:'eventos',component:ListEventosComponent},
   {path:'contacto',component:NewContactoComponent}
