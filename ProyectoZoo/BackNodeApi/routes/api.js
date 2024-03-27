@@ -6,6 +6,6 @@ router.use('/animales', checkToken,require('./api/animales.js'));
 router.use('/usuarios',require('./api/usuarios.js'));
 router.use('/users',checkToken,require('./api/users.js'));
 router.use('/empleados',checkToken,require('./api/empleados.js'));
-
+router.use('/eventos',checkToken,require('./api/eventos.js'));
 
 module.exports = router;

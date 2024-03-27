@@ -1,0 +1,34 @@
+### ListaUsuarios
+GET http://localhost:3000/api/eventos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6IlVzZXIwMEBlbWFpbC5jb20iLCJ1c2VyX3JvbGUiOjIsImlhdCI6MTcxMTU2NDQxM30.Ta4Y9u3DkGqLDM4SVXErYe1bXhd1wuxXXnTJ-hF5vYw
+
+### DetalleEvento
+GET http://localhost:3000/api/eventos/66045197a6e6a848fd458cf9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+### AgregarEvento
+POST http://localhost:3000/api/eventos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+
+{
+    "descripcion": "Aventura en Canoa",
+    "dia": "Martes",
+    "hora": "11:00am",
+    "duracion": "45 minutos",
+    "estado": true
+}
+
+### ModificarEvento
+PUT http://localhost:3000/api/eventos/6604525ea6e6a848fd458d04
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
+Content-Type: application/json
+
+{
+    "duracion": "45 minutos",
+    "estado": true
+}
+
+### EliminarEvento
+DELETE http://localhost:3000/api/eventos/6604525ea6e6a848fd458d04
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws

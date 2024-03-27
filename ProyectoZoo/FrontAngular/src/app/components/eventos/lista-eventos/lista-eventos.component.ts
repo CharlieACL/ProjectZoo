@@ -1,19 +1,19 @@
 import { Component, inject, signal } from '@angular/core';
-import { EventosService } from '../../../services/eventos.service';
 import { EventosCollection } from '../../../interfaces/eventos.interface';
+import { EventosService } from '../../../services/eventos.service';
 
 @Component({
-  selector: 'app-list-eventos',
-  templateUrl: './list-eventos.component.html',
-  styleUrl: './list-eventos.component.css'
+  selector: 'app-lista-eventos',
+  templateUrl: './lista-eventos.component.html',
+  styleUrl: './lista-eventos.component.css'
 })
-export class ListEventosComponent {
+export class ListaEventosComponent {
 
   arrEventos = signal<EventosCollection[]>([]);
   eventosService = inject(EventosService);
 
   async ngOnInit(){
-    const eventos = await this.eventosService.getAllForUser();
+    const eventos = await this.eventosService.getAll();
     this.arrEventos.set(eventos);
   }
 
@@ -28,4 +28,5 @@ export class ListEventosComponent {
       console.log("error");
     }
   }
+
 }

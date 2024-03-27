@@ -22,6 +22,9 @@ import { NewEmpleadoComponent } from './components/empleados/new-empleado/new-em
 import { DetalleEmpleadoComponent } from './components/empleados/detalle-empleado/detalle-empleado.component';
 import { ListaEmpleadoComponent } from './components/empleados/lista-empleado/lista-empleado.component';
 import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/update-empleado.component';
+import { ListaEventosComponent } from './components/eventos/lista-eventos/lista-eventos.component';
+import { UpdateEventosComponent } from './components/eventos/update-eventos/update-eventos.component';
+import { NewEventosComponent } from './components/eventos/new-eventos/new-eventos.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/
     NewEmpleadoComponent,
     DetalleEmpleadoComponent,
     ListaEmpleadoComponent,
-    UpdateEmpleadoComponent
+    UpdateEmpleadoComponent,
+    ListaEventosComponent,
+    UpdateEventosComponent,
+    NewEventosComponent
   ],
   imports: [
     BrowserModule,

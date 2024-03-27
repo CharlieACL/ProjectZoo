@@ -42,6 +42,10 @@ export class UsuariosService {
     return localStorage.getItem('token_admin') ? true : false;   
   }
 
+  isUser():boolean{
+    return localStorage.getItem('token_user') ? true : false;   
+  }
+
   //CRUD USUARIOS
 
   getAll(){

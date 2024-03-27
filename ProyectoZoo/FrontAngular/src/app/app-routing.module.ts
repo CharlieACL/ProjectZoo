@@ -17,6 +17,10 @@ import { ListaEmpleadoComponent } from './components/empleados/lista-empleado/li
 import { NewEmpleadoComponent } from './components/empleados/new-empleado/new-empleado.component';
 import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/update-empleado.component';
 import { DetalleEmpleadoComponent } from './components/empleados/detalle-empleado/detalle-empleado.component';
+import { ListaEventosComponent } from './components/eventos/lista-eventos/lista-eventos.component';
+import { NewEventosComponent } from './components/eventos/new-eventos/new-eventos.component';
+import { UpdateEventosComponent } from './components/eventos/update-eventos/update-eventos.component';
+import { eventGuard } from './guards/event.guard';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -38,7 +42,11 @@ const routes: Routes = [
   {path:'empleados/update/:empleadoId',component:UpdateEmpleadoComponent,canActivate:[adminGuard]},
   {path: 'empleados/:empleadoId',component:DetalleEmpleadoComponent,canActivate:[adminGuard]},
 
-  {path:'eventos',component:ListEventosComponent},
+  {path: 'eventos',component:ListaEventosComponent,canActivate:[adminGuard]},
+  {path: 'eventos/new',component:NewEventosComponent,canActivate:[adminGuard]},
+  {path: 'eventos/update/:eventoId',component:UpdateEventosComponent,canActivate:[adminGuard]},
+
+  {path:'horarioEventos',component:ListEventosComponent,canActivate:[eventGuard]},
   {path:'contacto',component:NewContactoComponent}
 ];
 
