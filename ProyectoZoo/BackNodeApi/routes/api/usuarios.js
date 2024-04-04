@@ -22,6 +22,7 @@ router.post('/login',async (req,res) =>{
         //Compruevo si el mail existe
         const usuario = await Usuario.findOne({correo:req.body.correo}); 
         const idRol = usuario.idRol;
+        const idUsuario = usuario.id;
 
         if(!usuario){
             return res.json({error:"correo o contraseña incorrectos"});
@@ -34,7 +35,7 @@ router.post('/login',async (req,res) =>{
         }
 
 
-        res.json({success: 'Iniciando Sesión...', idRol,token: createToken(usuario)});
+        res.json({success: 'Iniciando Sesión...', idRol,idUsuario,token: createToken(usuario)});
     }
     catch(error)
     {

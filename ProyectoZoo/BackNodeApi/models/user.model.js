@@ -4,7 +4,10 @@ const userSchema = new Schema({
     nombre: String,
     correo: String,
     contrasenna: String,
-    idRol: Number
+    idRol: {
+        type: Schema.Types.ObjectId,
+        ref: 'rol'
+    }
 });
 
 module.exports = model("Usuario", userSchema,"Usuarios");

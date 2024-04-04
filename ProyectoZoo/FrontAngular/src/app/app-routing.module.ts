@@ -21,6 +21,7 @@ import { ListaEventosComponent } from './components/eventos/lista-eventos/lista-
 import { NewEventosComponent } from './components/eventos/new-eventos/new-eventos.component';
 import { UpdateEventosComponent } from './components/eventos/update-eventos/update-eventos.component';
 import { eventGuard } from './guards/event.guard';
+import { ListaContactoComponent } from './components/contactenos/lista-contacto/lista-contacto.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -45,9 +46,10 @@ const routes: Routes = [
   {path: 'eventos',component:ListaEventosComponent,canActivate:[adminGuard]},
   {path: 'eventos/new',component:NewEventosComponent,canActivate:[adminGuard]},
   {path: 'eventos/update/:eventoId',component:UpdateEventosComponent,canActivate:[adminGuard]},
-
   {path:'horarioEventos',component:ListEventosComponent,canActivate:[eventGuard]},
-  {path:'contacto',component:NewContactoComponent}
+  
+  {path:'contacto',component:ListaContactoComponent},
+  {path:'contacto/new',component:NewContactoComponent}
 ];
 
 @NgModule({

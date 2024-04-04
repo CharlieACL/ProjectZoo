@@ -19,7 +19,10 @@
                     <tr *ngFor="let usuario of arrUsuarios()">
                         <td>{{ usuario.nombre }}</td>
                         <td>{{ usuario.correo }}</td>
-                        <td>{{ usuario.idRol }}</td>
+                        <td>
+                            <span *ngIf="usuario.idRol === '65f5cbfaf6eb3d011e1e2a4f'">Administrador</span>
+                            <span *ngIf="usuario.idRol === '65f5cbfaf6eb3d011e1e2a50'">Usuario</span>
+                        </td>
                         
                         <td class="btn-group" role="group" aria-label="Acciones">
                             <button class="btn btn-warning m-1" style="color: #ffffff;" [routerLink]="['/usuarios/update', usuario._id]">Modificar</button>

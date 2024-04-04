@@ -1,0 +1,12 @@
+### Lista de Mensajes
+GET http://localhost:3000/api/contacto
+
+### Enviar Mensaje
+POST http://localhost:3000/api/contacto
+Content-Type: application/json
+
+{
+    "correo": "correo@email.com",
+    "telefono": "89745636",
+    "mensaje" : "Donde se ubican?"
+}

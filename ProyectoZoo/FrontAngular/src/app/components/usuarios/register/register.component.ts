@@ -19,7 +19,7 @@ export class RegisterComponent {
         nombre: new FormControl(),
         correo: new FormControl(),
         contrasenna: new FormControl(),
-        idRol: new FormControl(2)
+        idRol: new FormControl('65f5cbfaf6eb3d011e1e2a50')
       })
     }
 

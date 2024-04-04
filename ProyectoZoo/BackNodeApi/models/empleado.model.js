@@ -5,7 +5,10 @@ const empleadoSchema = new Schema({
     apellido: String,
     identificacion: Number,
     telefono: String,
-    idServicio: Number,
+    idServicio: {
+        type:Schema.Types.ObjectId,
+        ref:'TipoServicio'
+    }
 });
 
 module.exports = model("Empleado", empleadoSchema,"Empleados");

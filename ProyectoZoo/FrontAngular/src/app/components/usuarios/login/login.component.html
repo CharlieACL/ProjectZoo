@@ -10,11 +10,11 @@
                 <form [formGroup]="formulario" (ngSubmit)="onSubmit()" > 
                 <div class="m-3">
                     <label for="correo" class="form-label" style="font-weight: bold;">Correo electrónico</label>
-                    <input type="email" id="correo" class="form-control" formControlName="correo" placeholder="Ingrese su correo electrónico">
+                    <input type="email" id="correo" class="form-control" formControlName="correo" placeholder="Ingrese su correo electrónico" required="true">
                 </div>
                 <div class="m-3">
                     <label for="contrasenna" class="form-label" style="font-weight: bold;">Contraseña</label>
-                    <input type="password" id="contrasenna" class="form-control" formControlName="contrasenna" placeholder="Ingrese su contraseña">
+                    <input type="password" id="contrasenna" class="form-control" formControlName="contrasenna" placeholder="Ingrese su contraseña" required="true">
                 </div >
                 <div class="text-center " >
                     <button type="submit" class="btn buttonSty">Iniciar sesión</button>

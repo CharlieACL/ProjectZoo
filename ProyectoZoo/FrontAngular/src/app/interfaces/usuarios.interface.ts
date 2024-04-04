@@ -3,7 +3,7 @@ export interface UsuariosCollection{
     nombre: string;
     correo: string;
     contrasenna: string;
-    idRol: number;
+    idRol: string;
     __v: number;
     token: string;
     error: string;

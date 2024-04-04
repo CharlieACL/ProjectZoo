@@ -6,7 +6,10 @@ const animalSchema = new Schema({
     sexo: String,
     peso: String,
     altura: String,
-    idZona: Number,
+    idZona:{
+        type: Schema.Types.ObjectId,
+        ref: 'Zona'
+    },
     edad: Number,
     activo: Boolean
 });

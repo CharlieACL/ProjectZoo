@@ -5,7 +5,7 @@ export interface AnimalesCollection {
     sexo: string;
     peso: string;
     altura: string;
-    idZona: number;
+    idZona: string;
     edad: number;
     activo: boolean;
     __v: number;

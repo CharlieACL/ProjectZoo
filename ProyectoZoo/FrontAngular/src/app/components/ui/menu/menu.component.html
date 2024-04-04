@@ -15,7 +15,7 @@
                 <a *ngIf="usuariosService.isUser()" class="nav-link" [routerLink]="['/horarioEventos']">Eventos</a>
             </li>
             <li class="nav-item">
-                <a *ngIf="usuariosService.isLogged()" class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+                <a *ngIf="usuariosService.isLogged()" class="nav-link" [routerLink]="['/contacto/new']">Contacto</a>
             </li>  
             <li class="nav-item dropdown">
                 <a *ngIf="usuariosService.isAdmin()" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Administración</a>

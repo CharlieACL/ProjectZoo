@@ -4,6 +4,6 @@ export interface EmpleadosCollection {
     apellido: string,
     identificacion: number,
     telefono: string,
-    idServicio: number,
+    idServicio: string,
     __v: number;
 }

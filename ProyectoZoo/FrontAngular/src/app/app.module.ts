@@ -25,6 +25,7 @@ import { UpdateEmpleadoComponent } from './components/empleados/update-empleado/
 import { ListaEventosComponent } from './components/eventos/lista-eventos/lista-eventos.component';
 import { UpdateEventosComponent } from './components/eventos/update-eventos/update-eventos.component';
 import { NewEventosComponent } from './components/eventos/new-eventos/new-eventos.component';
+import { ListaContactoComponent } from './components/contactenos/lista-contacto/lista-contacto.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NewEventosComponent } from './components/eventos/new-eventos/new-evento
     UpdateEmpleadoComponent,
     ListaEventosComponent,
     UpdateEventosComponent,
-    NewEventosComponent
+    NewEventosComponent,
+    ListaContactoComponent
   ],
   imports: [
     BrowserModule,
