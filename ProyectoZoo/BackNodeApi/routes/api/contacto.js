@@ -12,6 +12,18 @@ router.get('/',async (req,res) => {
     }   
 });
 
+router.get('/:contactoId', async(req,res) => {
+    try{
+        const {contactoId} = req.params;
+        const contacto = await Contacto.findById(contactoId)
+        res.json(contacto);
+    }
+    catch{
+        res.json({error: error.message});
+    }
+    
+});
+
 //Agregar
 router.post('/',async (req,res) => {
     try{

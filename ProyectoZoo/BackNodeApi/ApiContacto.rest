@@ -1,6 +1,9 @@
 ### Lista de Mensajes
 GET http://localhost:3000/api/contacto
 
+### Mensaje Especifico
+GET http://localhost:3000/api/contacto/660e137647455127a9bae4fb
+
 ### Enviar Mensaje
 POST http://localhost:3000/api/contacto
 Content-Type: application/json

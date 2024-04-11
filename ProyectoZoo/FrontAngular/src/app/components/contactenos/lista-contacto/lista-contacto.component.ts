@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { ContactoCollection } from '../../../interfaces/contacto.interface';
+import { ContactenosService } from '../../../services/contactenos.service';
 
 @Component({
   selector: 'app-lista-contacto',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class ListaContactoComponent {
 
+  arrContactos = signal<ContactoCollection[]>([])
+
+  contactosService = inject(ContactenosService);
+
+  async ngOnInit(){
+    const contactos = await this.contactosService.getAll();
+    this.arrContactos.set(contactos);
+  }
 }
