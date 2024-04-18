@@ -6,7 +6,7 @@ Content-Type: application/json
     "nombre":"jorge",
     "correo":"joreg@gmail.com",
     "contrasenna":"456",
-    "idRol": 2
+    "idRol": "65f5cbfaf6eb3d011e1e2a50"
 }
 
 ### Login
@@ -35,16 +35,16 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWlu
     "nombre":"userApi",
     "correo":"userApi@gmail.com",
     "contrasenna":"123",
-    "idRol": 1
+    "idRol": "65f5cbfaf6eb3d011e1e2a50"
 }
 
 ### ModificarUsuario
-PUT http://localhost:3000/api/users/65fb9d10f195fe67f51576e6
+PUT http://localhost:3000/api/users/662058fe6822985c3d662a61
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvcnJlbyI6ImFkbWluMDBAZW1haWwuY29tIiwidXNlcl9yb2xlIjoxLCJpYXQiOjE3MTEyMjUyMjB9.P4yvRK0g0Y-1jxQDHsBLYsqC-3mTvjafuIlR7P4o0Ws
 Content-Type: application/json
 
 {
-    "idRol": 2
+    "idRol": "65f5cbfaf6eb3d011e1e2a50"
 }
 
 ### EliminarUsuario

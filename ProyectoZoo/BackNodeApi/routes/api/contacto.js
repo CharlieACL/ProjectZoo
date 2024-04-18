@@ -36,5 +36,18 @@ router.post('/',async (req,res) => {
     
 });
 
+//Eliminar
+router.delete('/:contactoId',async(req,res) => {
+    try{
+        const {contactoId} = req.params;
+        const contacto = await Contacto.findByIdAndDelete(contactoId);
+        res.json(contacto);
+    }
+    catch(error){
+        res.json({error: error.message});
+    }
+    
+});
+
 
 module.exports = router; 
